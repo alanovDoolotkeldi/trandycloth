@@ -1,0 +1,18 @@
+     .header-right {
+            @apply flex gap-[10px] lg:w-[192.66px] lg:justify-between;
+            // rgba(0, 0, 0, 0.2)
+            .block {
+                // bg-[rgba(0,0,0,0.1)] duration-200 hover:bg-[rgba(0,0,0,0.1)] bg-none 
+              @apply w-[54.22px] h-[58px] hidden lg:flex border border-[rgba(255,255,255,0.4)] hover:border-[rgba(255,255,255,1)] cursor-pointer rounded-[4px] flex flex-col items-center justify-center text-[10px] font-extrabold text-white;
+  
+              img {
+                @apply w-[25px] h-[25px] object-cover;
+              }
+            }
+            .block-2{
+                @apply flex w-[23px] max-w-full h-[40px] border-0 lg:w-[54.22px] lg:h-[58px] lg:border lg:border-[rgba(255,255,255,0.4)];
+                .IoLocationOutline{
+                  @apply text-[30px];
+                }
+            }
+          }

@@ -1,0 +1,67 @@
+header {
+  @apply w-full  bg-[#2A6FDE] py-3 lg:py-4 fixed top-0 z-[9999]; // Если нужен черный фон
+  z-index: 999;
+  // background: linear-gradient(100.48deg, #4A8FC6 3.51%, #1A2D47 90.79%);
+
+  .wrapper {
+    .header-container {
+      @apply w-full flex lg:gap-[17px] items-center justify-between;
+
+      // border border-[rgb(100,100,231)] bg-[#2A6FDE] rounded-[12px]
+      .logo {
+        @apply hidden lg:flex gap-[34px];
+
+        .logo-image {
+          @apply w-[108px];
+
+          img {
+            @apply w-full h-[58px];
+          }
+        }
+      }
+      .arrow-left {
+        @apply hidden;
+      }
+
+      .container-info {
+        @apply w-full flex items-center gap-[10px] lg:gap-[17px] justify-between lg:justify-start;
+
+        //   .header-right {
+        //     @apply flex gap-[15px]  ;
+
+        //     .block {
+        //       @apply w-[61px] h-[52.4px] bg-[rgba(0,0,0,0.2)] hover:bg-[rgba(0,0,0,0.3)] cursor-pointer rounded-[4px] flex flex-col items-center justify-center text-[10px] font-extrabold text-white;
+
+        //       img {
+        //         @apply w-[25px] h-[25px] object-cover;
+        //       }
+        //     }
+        //   }
+      }
+    }
+  }
+}
+.header-open {
+  @apply bg-white lg:bg-[#2A6FDE];
+  .wrapper {
+    .header-container {
+      .arrow-left {
+        @apply flex lg:hidden items-center text-black w-[32px] h-[40px] size-4 mr-2;
+        .IoArrowBackOutline{
+          @apply text-[26px];
+        }
+      }
+
+      .container-info {
+        form {
+          @apply bg-[#f6f6f9];
+        }
+        .header-right {
+          .block-2 {
+            @apply hidden lg:flex;
+          }
+        }
+      }
+    }
+  }
+}

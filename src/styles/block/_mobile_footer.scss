@@ -1,0 +1,22 @@
+.footer-mobile{
+@apply w-full fixed bottom-0 z-50 bg-[#FFFFFF];
+box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+// z-index: 999;
+
+.adaptive-footer-main{
+    // @apply border border-regal-red;
+    .adaptive-footer-blocks{
+        @apply flex items-center;
+        .adaptive-footer-block{
+            @apply w-[50%] h-[52px] flex justify-center items-center;
+            span{
+                @apply w-7 h-7 object-cover;
+                .img{
+                    @apply object-cover text-[28px];
+                    mask-size: 28px;
+                }
+            }
+        }
+    }
+}
+}

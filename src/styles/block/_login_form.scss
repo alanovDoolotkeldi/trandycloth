@@ -1,0 +1,15 @@
+.login-form{
+   .login-form-input{
+    @apply w-full border h-[52px] rounded-[12px] bg-[#f1f1f5] border border-[#d3d4dd] flex;
+    .form-dropdown{
+        @apply w-[62px] h-full rounded-bl-[12px] rounded-tl-[12px] flex items-center justify-center ;
+    }
+    input{
+        @apply w-[224px] bg-[#f1f1f5] border-none rounded-br-[12px] rounded-tr-[12px] outline-none pl-[2px];
+    }
+   }
+    button{
+        @apply w-full h-[51.2px] bg-blue-400 text-[#FFFFFF] text-[16px] font-semibold mt-5 rounded-[12px];
+        
+    }
+}

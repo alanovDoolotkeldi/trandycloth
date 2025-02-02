@@ -1,0 +1,12 @@
+# Convert the image to an approximate SVG using a simpler raster-to-vector approach
+from PIL import ImageOps
+
+# Invert the image to improve contrast (black shapes on white)
+inverted_image = ImageOps.invert(image)
+
+# Save as monochrome to prepare for vectorization
+mono_image = inverted_image.convert("1")  # Convert to black and white (binary)
+mono_output_path = "/mnt/data/mono_image.png"
+mono_image.save(mono_output_path)
+
+mono_output_path

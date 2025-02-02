@@ -1,0 +1,50 @@
+.auth-popup-container{
+    @apply w-full h-full fixed bg-[rgba(36,36,36,0.3)] top-0 z-auto flex items-end;
+    z-index: 9999;
+    .auth-popup-info{
+        @apply w-full bg-[#fff];
+        border-radius: 12px 12px 0 0 ;
+        .auth-popup-info-top{
+            @apply p-4 rounded-[16px] bg-white relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+            .auth-popup-content{
+                @apply flex flex-col items-center justify-center;
+                .auth-popup-content-image{
+                    @apply w-20 h-20 border rounded-[50%];
+
+                }
+                .auth-popup-content-text{
+                    @apply mt-4 text-[14px] text-[#868695] leading-5 max-w-[260px] text-center;
+
+
+                }
+                .auth-popup-content-button{
+                    @apply w-full mt-4;
+                    
+                    button{
+                        @apply bg-[#a73afd] w-full rounded-[12px] leading-[22px] text-[#fff] text-[16px] font-semibold ;
+                        padding: 8px 24px 10px;
+                    }
+                }
+            }
+            .auth-popup-info-top-close{
+                @apply w-10 h-10 absolute right-1 top-1 text-[30px] flex justify-center text-[#868695] items-center;
+            }
+        }
+        .auth-popup-info-bottom{
+            @apply w-full p-4;
+            .auth-popup-info-button{
+                box-shadow: 0 0 20px rgba(0, 0, 0, .1) ;
+                @apply rounded-[12px];
+                button{
+                    @apply w-full bg-[#FFFFFF] p-4 rounded-[12px] text-[14px] text-[#242424] font-semibold flex justify-between items-center;
+                    span{
+                        @apply flex items-center gap-2 text-[#868695];
+                    }
+    
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.card-item {
+  @apply flex flex-col lg:grid lg:grid-rows-auto lg:grid-cols-[624px_calc(100%-992px)_368px] lg:gap-x-4 xl:grid-cols-[624px_calc(100%-992px)_368px] xl:gap-x-4;
+  align-items: flex-start;
+
+  .card-item-images {
+    @apply relative lg:m-0 lg:self-stretch mb-3 lg:mb-0 lg:pr-5 xl:pr-7;
+
+    .card-item-images-wrap {
+      @apply sticky top-5;
+
+      .card-images-info {
+        @apply flex relative lg:h-[58vw] xl:h-auto lg:flex lg:items-start w-auto;
+
+        .card-images-info-blocks {
+          @apply lg:w-[74px] lg:h-full flex-shrink-0 ml-[-2px] mr-[-2px] xl:w-[88px] h-full;
+
+          .card-iamges-info-blocks-btn-1 {
+            @apply hidden lg:flex absolute left-[calc(50%-22px)] top-4 w-11 h-11 bg-white rounded-full p-3 shadow-md cursor-pointer;
+          }
+
+          .card-iamges-info-blocks-btn-1::before {
+            @apply block w-4 h-4;
+            content: "";
+            // background-image: url(data:image/svg+xml,%3Csvg%20...%3E);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+
+          .card-image-info-blocks-slider {
+            @apply relative h-full;
+
+            .card-info-blocks-swipper {
+              @apply h-full w-full select-none;
+
+              ul {
+                @apply flex flex-col transform transition-transform;
+
+                li {
+                  @apply mb-2 rounded border lg:max-h-[96px] xl:max-h-[116px] xl:h-[127px];
+                  img {
+                    cursor: pointer;
+                    border-radius: 4px;
+                    width: auto;
+                    height: 100%;
+                  }
+                }
+              } /* Закрытие тега ul добавлено здесь */
+            }
+
+            .swipper-container {
+              @apply relative overflow-hidden list-none;
+
+              .wripper-wrapper {
+                @apply relative flex w-full h-full;
+              }
+            }
+          }
+        }
+
+        .card-images-content {
+          @apply ml-2 lg:h-full w-auto border border-regal-red;
+
+          .card-images-content-mix-block {
+            @apply relative lg:overflow-hidden rounded-lg  lg:aspect-[.75] lg:max-h-[768px] lg:min-h-[600px] xl:min-h-[512px] xl:max-h-[669px]  xl:aspect-auto lg:max-w-[576px] xl:min-w-[384px] xl:max-w-[502px] xl:pt-[133.333%] border border-regal-red;
+            // lg: 
+            .card-images-content-mix-block-btn-1,
+            .card-images-content-mix-block-btn-2 {
+              @apply hidden lg:flex lg:hidden absolute z-50 w-11 h-11 bg-white rounded-full shadow-md p-3 cursor-pointer transition-opacity ease-in;
+            }
+            .card-images-content-mix-block-btn-2{
+              right: 0;
+              top: 0;
+
+            }
+
+            .card-images-content-link {
+              @apply absolute bottom-3 right-3 bg-white/60 rounded-lg px-3 py-2 text-sm font-medium flex items-center gap-1 backdrop-blur;
+            }
+            .card-images-content-image-container{
+              @apply   absolute left-0 top-0;
+              .card-images-content-image-photo{
+                border: 1px solid transparent;
+                transition: border-color .3s;
+                border: 1px solid red;
+                .card-images-content-image-photo-div{
+                  // @apply w-auto h-auto;
+
+                
+                img{
+                  @apply max-w-full lg:max-h-[58vw] border border-regal-red shadow-lg;
+
+                }
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-item-description {
+    @apply flex flex-col bg-white rounded-2xl p-4 mb-2 lg:mb-6 lg:col-span-1;
+
+    .card-item-description-header {
+      @apply flex flex-wrap justify-between relative mb-4 lg:pr-3;
+
+      a {
+        @apply bg-gray-100 rounded-md px-2 py-1 text-sm inline-flex items-center transition-colors;
+      }
+
+      h1 {
+        @apply text-lg font-medium line-clamp-2 lg:text-xl lg:line-clamp-none;
+      }
+    }
+  }
+
+  .card-item-colors {
+    /* Добавить стили через @apply */
+  }
+
+  .card-item-characteristics {
+    /* Добавить стили через @apply */
+  }
+
+  .card-item-return {
+    /* Добавить стили через @apply */
+  }
+
+  .card-item-popup {
+    /* Добавить стили через @apply */
+  }
+}

@@ -1,0 +1,62 @@
+.search-form {
+  @apply relative w-full max-w-[699.2px] sm:max-w-[955.2px] lg:max-w-[951px]  h-[40px] lg:h-[58px] border border-white bg-white rounded-[12px] lg:rounded-[16px] px-[15px] flex items-center;
+  
+
+  input {
+    @apply flex-1 border-none outline-none bg-transparent;
+  }
+
+  .FaSearch {
+    @apply w-[20px] h-[20px] text-[#2A6FDE] cursor-pointer;
+  }
+  .fixed-search{
+    @apply fixed top-[90px] left-0 w-full h-full bg-[#dad5d5cb] ;
+  }
+  .fixed-search-texts{
+    @apply absolute w-full left-0  top-[64px] bg-[#fff] border rounded-[16px] indent-11 px-0;
+    .search-info{
+      @apply w-[1023,2px] sm:w-full max-w-full flex flex-col justify-center border-none  px-4 lg:px-0 py-0 lg:pt-[10px] mx-auto text-left;
+      .your-search{
+        @apply pt-2 pb-[10px] h-[43px] w-full text-[#a9a8b0] font-semibold relative;
+        h5{
+          @apply absolute left-[-45px] lg:left-[-32px];
+        }
+      }
+      ul{
+        @apply  px-0 mx-0  w-full;
+        li{
+          @apply pt-2 pb-[10px] lg:px-3 w-full relative lg:hover:bg-[#f6f6f9] hover:cursor-pointer flex items-center justify-between;
+          p{
+            @apply text-[#242424] text-[16px] font-medium ;
+          }
+          .search-icon-left{
+            @apply  left-0 lg:left-3 top-0 absolute left-0 top-[11px];
+            img{
+              @apply w-4 h-4 ;
+            }
+            
+          }
+          button{
+            @apply text-[#A9A8B0] hover:text-[#242424];
+
+
+            .IoCloseSharp{
+              @apply  text-[25px] font-extrabold;
+            }
+          }
+          .search-icon-right{
+
+          }
+          
+          
+       
+        }
+ 
+
+      }
+    }
+  }
+  .is-open-true{
+    @apply fixed w-full h-[100vh] left-0 lg:absolute lg:h-auto ;
+  }
+}

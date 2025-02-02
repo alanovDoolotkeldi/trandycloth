@@ -1,0 +1,9 @@
+.card-item-page{
+    @apply pt-[64px] lg:pt-[90px] mb-8 lg:mb-[48px];
+}
+.togolok{
+    @apply relative lg:overflow-hidden rounded-lg lg:h-[768px] lg:min-h-[600px] xl:min-h-[512px] xl:max-h-[669px] lg:w-[576px] xl:min-w-[384px] xl:w-[502px] max-w-full border border-regal-red;
+}
+.wrapper-page{
+    display: flex;
+}

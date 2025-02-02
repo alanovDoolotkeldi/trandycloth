@@ -1,0 +1,90 @@
+.card {
+    @apply max-w-full min-h-full min-w-[167.6px] md:min-w-[178px] lg:min-w-[203.33px] cursor-pointer;
+  .card-image-info {
+    @apply relative;
+
+    .card-image {
+      @apply w-full;
+      img {
+        @apply w-full max-w-full h-auto select-none min-w-[167px] rounded-[10px];
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+    }
+    .card-image-info-heart {
+      @apply w-11 h-11 absolute right-0 top-0 flex justify-center items-center;
+    }
+    .card-image-info-good-price {
+      @apply py-1 pl-[5px] pr-1 absolute bottom-0 left-0 text-white flex flex-col items-start;
+      p {
+        @apply flex items-center m-0 mt-1 h-[16px] px-1 bg-black rounded-[6px] text-[12px] font-semibold cursor-pointer;
+      }
+      .image-p-1 {
+        @apply bg-[#f44];
+      }
+      .image-span {
+        @apply items-center gap-1 flex;
+        background: #9f3ffe linear-gradient(91deg, #9f3ffe 0, #d052fa 97%);
+        img {
+          @apply w-[10px] h-[11px] mb-[2px];
+        }
+      }
+      .image-p-2 {
+        @apply bg-[#066446];
+      }
+    }
+  }
+  .card-price-info {
+    @apply mt-3 lg:mt-3 mb-0;
+    .card-price {
+      @apply flex items-center;
+      span {
+        @apply flex items-center text-[18px] leading-6 text-[#f44] mr-2 font-semibold font-sans gap-1;
+        img{
+          @apply mb-[2px];
+        }
+      }
+      p{
+        @apply text-[12px] leading-4 text-[#868695] font-medium line-through;
+      }
+    }
+    h2 {
+      @apply text-ellipsis overflow-hidden text-[#9d9da5];
+      span {
+        @apply text-[14px] font-medium mr-1 mb-0;
+      }
+      white-space: nowrap;
+      .card-price-span-1 {
+        @apply text-[#242424];
+      }
+      .card-price-span-2 {
+        @apply text-[#9d9da5] font-medium text-ellipsis whitespace-nowrap relative overflow-hidden;
+      }
+    }
+  }
+  .card-button-info {
+    @apply w-full mt-1 flex flex-col gap-1;
+    p{
+        @apply flex items-center;
+        .card-button-info-span-1{
+            @apply text-[12px] leading-4 flex items-center justify-center gap-1;
+            img{
+                @apply w-3;
+            }
+        }
+        .card-button-info-span-2{
+            @apply flex items-center text-ellipsis whitespace-nowrap align-middle text-[#9d9da5] text-xs leading-4 inline-block overflow-hidden font-medium;
+        }
+        .card-button-info-span-2::before{
+                @apply content-[''] align-middle bg-[#9d9da5] rounded-full w-1 h-1 mx-1 my-0.5 inline-block;
+        }
+    }
+    button{
+        @apply w-full mt-2 flex relative bg-[#a73afd] items-end flex-grow rounded-[10px];
+        a{
+            @apply flex items-center justify-center gap-2 w-full p-[3px_5px_5px] text-sm leading-5 z-10 lg:p-[5px_24px_7px] text-white;
+        }
+    }
+
+  }
+}

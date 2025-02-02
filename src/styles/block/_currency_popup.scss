@@ -1,0 +1,20 @@
+.currency-popup{
+    @apply w-full h-[336px] fixed bottom-0 bg-white pt-3 rounded-t-[12px];
+    .currency-popup-container{
+        .currency-popup-title{
+            @apply flex items-center justify-between;
+            h2{
+
+            }
+            button{
+                
+            }
+
+        }
+        ul{
+            li{
+
+            }
+        }
+    }
+} 
