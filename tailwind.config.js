@@ -7,6 +7,7 @@ module.exports = withMT({
     extend: {
       colors: {
         "regal-red": "#b91c1c",
+        "regal-black": "#242424",
       },
       gridTemplateColumns: {
         'card-layout-lg': '624px calc(100% - 992px) 368px',

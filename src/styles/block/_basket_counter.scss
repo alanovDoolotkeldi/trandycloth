@@ -1,0 +1,53 @@
+.basket-counter {
+  @apply mt-4 mx-2 w-[calc(100%-12px)] md:w-[calc(100%-16px)] lg:w-[195px] lg:mt-0;
+  // @apply mx-2 lg:mx-0 mt-4 border border-regal-red;
+  .basket-counter-container {
+    @apply min-w-[80px] w-[106px] lg:w-[116px] justify-between inline-flex items-center;
+
+    button {
+      @apply w-8 h-8 bg-[#f1f1f5] rounded-lg relative;
+    }
+    .basket-counter-1 {
+      &:after {
+        content: "";
+        background-color: #242424;
+        border-radius: 4px;
+        width: 12px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 6px);
+        background-color: #bfbfc9;
+      }
+    }
+    .basket-counter-2 {
+      &:before {
+        content: "";
+        background-color: #242424;
+        border-radius: 4px;
+        width: 12px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 6px);
+        transform: rotate(-90deg);
+      }
+      &:after {
+        content: "";
+        background-color: #242424;
+        border-radius: 4px;
+        width: 12px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 6px);
+      }
+    }
+    .basket-count-number{
+        @apply w-[42px] h-[32px] text-center cursor-auto flex justify-center items-center;
+    }
+  }
+}
