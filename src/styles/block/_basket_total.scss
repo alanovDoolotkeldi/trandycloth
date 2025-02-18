@@ -1,0 +1,52 @@
+.basket-items-total {
+  @apply w-full xl:w-[360px] max-w-full;
+  .basket-items-total-price-link {
+    @apply hidden lg:flex text-[16px] text-[#A73AFD] font-bold mb-[22px];
+
+  }
+  .basket-items-total-top {
+    @apply text-[14px] leading-5 font-medium mb-5;
+    .basket-items-total-price {
+      @apply flex justify-between items-center mt-2;
+      p {
+        @apply text-[#868695];
+      }
+      .basket-price-p-3 {
+        @apply leading-6 text-[18px] lg:text-[24px] text-regal-black font-semibold font-roboto;
+      }
+    }
+    .basket-items-total-price-1.basket-items-total-price {
+      @apply mt-0;
+    }
+  }
+  .basket-item-total-button{
+    button{
+        @apply w-full h-[43px] text-[16px] font-bold text-white bg-blue-700 hover:bg-blue-500 rounded-[12px] border;
+        // border: 2px solid transparent;
+    }
+  }
+  .basket-items-total-checbox-info{
+    @apply flex items-center mt-3 lg:mt-[22px] gap-2;
+    .basket-items-total-chekbox{
+        .IoCheckbox{
+            @apply text-[22px] text-deep-purple-500;
+
+        }
+    }
+    span{
+        @apply text-[12px] lg:text-[14px] text-[#868695] leading-4 lg:leading-[20px];
+        a{
+            @apply text-regal-black
+        }
+    }
+  }
+  .basket-items-total-stop{
+    @apply flex items-start md:items-center xl:items-start mt-3 lg:mt-[22px] gap-[6px];
+    .basket-items-total-chekbox{
+  @apply w-4 h-4;
+    }
+    span{
+        @apply text-[12px] lg:text-[14px] text-[#868695] leading-4 lg:leading-[20px];
+    }
+  }
+}
