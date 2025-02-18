@@ -35,7 +35,7 @@ function CardItem() {
               <div className="card-images-content-image-container">
               <div className="card-images-content-image-photo">
                 <div className='card-images-content-image-photo-div'>
-                  {/* <img src="/public/assets/svg/2.webp" alt="" /> */}
+                  <img src="/public/assets/svg/2.webp" alt="" />
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ function CardItem() {
         <div className="card-item-popup">
             
         </div>
-        carditem
+        card
       
     </div>
   )

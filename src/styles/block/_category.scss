@@ -1,0 +1,20 @@
+.category-page {
+  @apply w-[1408px] max-w-full mx-auto px-[16px] max-h-full h-[379px];
+  // по у мочанию должен выходит
+  // background:no-repeat url(https://static-basket-03.wbbasket.ru/vol48/marketing-creative-api/banners/ed3d8077-0c11-4794-a9b6-fbc7bad6a71d.webp), linear-gradient(0deg, #FF49D6, #9643FF);
+
+  background: no-repeat
+      url(https://static-basket-03.wbbasket.ru/vol48/marketing-creative-api/banners/ed3d8077-0c11-4794-a9b6-fbc7bad6a71d.webp),
+    linear-gradient(0deg, #ff49d6, #9643ff);
+  background-size: 100%;
+  // @apply bg-[no-repeat,url(https://static-basket-03.wbbasket.ru/vol48/marketing-creative-api/banners/ed3d8077-0c11-4794-a9b6-fbc7bad6a71d.webp),linear-gradient(0deg,#FF49D6,#9643FF)]
+  // md:bg-[no-repeat,url(https://static-basket-03.wbbasket.ru/vol48/marketing-creative-api/banners/def4f331-83f7-4399-91a7-675de80c369c.webp),linear-gradient(0deg,#FF49D6,#9643FF)];
+}
+@media screen and (min-width: 750px) {
+  .category-page {
+    background: no-repeat
+        url(https://static-basket-03.wbbasket.ru/vol48/marketing-creative-api/banners/def4f331-83f7-4399-91a7-675de80c369c.webp),
+      linear-gradient(0deg, #ff49d6, #9643ff);
+    background-size: 100%;
+  }
+}

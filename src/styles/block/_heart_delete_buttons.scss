@@ -1,0 +1,19 @@
+.heart-delete-buttons{
+    @apply absolute bottom-0 right-0 flex lg:relative lg:mt-3;
+    button{
+        @apply p-2 lg:p-0;
+        span{
+            background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    display: block;
+        }
+    }
+    .heart-delete-button-2{
+        @apply mr-2;
+    }
+
+}
